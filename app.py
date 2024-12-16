@@ -212,12 +212,10 @@ if df is not None:
             with col1:
                 pattern_1 = st.selectbox('Selected Pattern', (pattern, inv),key='pattern_2')
             pivot_table = helper.analysis_week(df, pattern_1)
-            if pivot_table:
-                plt.figure(figsize=(10, 4.5))
-                sns.heatmap(pivot_table, annot=True, cmap="coolwarm", cbar_kws={'label': 'num'})
-                st.pyplot(plt)
-            else:
-                st.write("No Data!!")
+            plt.figure(figsize=(10, 4.5))
+            sns.heatmap(pivot_table, annot=True, cmap="coolwarm", cbar_kws={'label': 'num'})
+            st.pyplot(plt)
+
 
 
         #--------------------------------------------Popular Patterns Analysis---------------------------------------
