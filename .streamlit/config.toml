@@ -1,0 +1,10 @@
+[theme]
+primaryColor = "#4CAF50"                # Example: Green
+backgroundColor = "#FFFFFF"             # Example: White
+secondaryBackgroundColor = "#F0F2F6"    # Example: Light gray
+textColor = "#000000"                   # Example: Black
+font = "sans serif"                     # Options: "sans serif", "serif", "monospace"
+
+# Set layout to wide mode
+[layout]
+wideMode = true
